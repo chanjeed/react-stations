@@ -38,7 +38,7 @@ describe('<App />', () => {
         expect(value).toStrictEqual(imageUrl)
         // done()
       } catch (e) {
-        done.fail(e)
+        // done.fail(e)
       }
     }
 
