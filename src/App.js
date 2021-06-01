@@ -17,11 +17,9 @@ export const App = () => {
           console.log(result.message)
           setDogUrl(result.message)
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         error => {
           console.log('Error')
+          setError(error)
           setDogUrl('https://images.dog.ceo/breeds/dalmatian/cooper2.jpg')
         },
       )
@@ -29,6 +27,7 @@ export const App = () => {
   const [dogUrl, setDogUrl] = useState(
     'https://images.dog.ceo/breeds/dalmatian/cooper2.jpg',
   )
+  const [error, setError] = useState(null)
   return [
     <header>
       <h1>Dogアプリ</h1>
