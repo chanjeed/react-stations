@@ -18,11 +18,11 @@ export const App = () => {
           setDogUrl(result.message)
         },
         error => {
-          console.log('Error')
           setError(error)
           setDogUrl('https://images.dog.ceo/breeds/dalmatian/cooper2.jpg')
         },
       )
+      .catch(error => console.error(error))
   }
   const [dogUrl, setDogUrl] = useState(
     'https://images.dog.ceo/breeds/dalmatian/cooper2.jpg',
@@ -33,7 +33,7 @@ export const App = () => {
       <h1>Dogアプリ</h1>
     </header>,
     <p>犬の画像を表示するサイトです</p>,
-    <img src={dogUrl} alt="Dalmatian" width="500" height="300"></img>,
+    <img src={dogUrl} alt="Dog image" width="500" height="300"></img>,
     <br />,
     <br />,
     <button onClick={() => changeDogUrl()}>更新</button>,
