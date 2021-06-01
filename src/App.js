@@ -17,5 +17,16 @@ export const App = () => {
     </header>,
     <p>犬の画像を表示するサイトです</p>,
     <img src={dogUrl} alt="Dalmatian" width="500" height="300"></img>,
+    <br />,
+    <br />,
+    <button
+      onClick={() =>
+        setDogUrl(
+          'https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg ',
+        )
+      }
+    >
+      更新
+    </button>,
   ]
 }
