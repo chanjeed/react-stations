@@ -5,8 +5,8 @@ export const DogListContainer = props => {
   useEffect(async () => {
     const result = await fetch('https://dog.ceo/api/breeds/list/all')
     result = result.json()
-    setBreeds(result.message)
+    setBreeds(Object.keys(result.message))
   }, [])
 
-  return null
+  return <div>{breeds}</div>
 }
