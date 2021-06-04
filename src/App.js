@@ -15,12 +15,10 @@ export const App = () => {
   // const result = await fetch('https://dog.ceo/api/breeds/image/random')
   // result = result.json()
   // setDogUrl(result.message)
-
+  ;<DogListContainer />
   return (
     <>
-      <DogListContainer />
       <Header />
-
       <Description />
     </>
   )
