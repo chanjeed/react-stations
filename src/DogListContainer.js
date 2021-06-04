@@ -3,10 +3,11 @@ export const DogListContainer = props => {
   const [breeds, setBreeds] = useState(0)
 
   useEffect(async () => {
-    const result = await fetch('https://dog.ceo/api/breeds/list/all')
-    result = result.json()
-    setBreeds(Object.keys(result.message))
+    const breeds_list = await fetch('https://dog.ceo/api/breeds/list/all')
+    breeds_list = breeds_list.json()
+    console.log(breeds_list)
+    setBreeds(breeds_list)
   }, [])
 
-  return <div>{breeds}</div>
+  return <h2>Hello</h2>
 }
