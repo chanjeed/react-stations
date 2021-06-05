@@ -1,6 +1,5 @@
 // DO NOT DELETE
 import React, { useState } from 'react'
-import { DogListContainer, showImgList } from './DogListContainer'
 
 export const BreedsSelect = props => {
   const [showSelect, setShowSelect] = useState('affenpinscher')
