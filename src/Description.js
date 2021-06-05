@@ -28,7 +28,7 @@ export const Description = props => {
       <p className="description">犬の画像を表示するサイトです</p>,
       <div className="dog">
         <DogImage url={dogUrl} />
-        <button className="dog-button" onClick={() => changeDogUrl()}>
+        <button className="dog-button" onClick={changeDogUrl}>
           更新
         </button>
       </div>
