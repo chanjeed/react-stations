@@ -36,3 +36,19 @@
   font-size: 20px;
   color: white;
 }
+.breeds-select {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+  background-color: bisque;
+}
+
+.breeds-select-label {
+  margin: 10px;
+}
+
+.breeds-select-dropdown {
+  width: 200px;
+  font-size: medium;
+  text-align-last: center;
+}

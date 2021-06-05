@@ -15,8 +15,9 @@ export const App = () => {
   return (
     <>
       <Header />
-      <DogListContainer />
       <Description />
+      <hr />
+      <DogListContainer />
     </>
   )
 }
